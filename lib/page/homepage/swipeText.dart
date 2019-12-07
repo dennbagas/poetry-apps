@@ -5,9 +5,13 @@ class SwipeText extends StatefulWidget {
   const SwipeText({
     Key key,
     @required this.screenSize,
+    @required this.text,
+    this.showUpDuration = 4000,
   }) : super(key: key);
 
   final Size screenSize;
+  final String text;
+  final int showUpDuration;
 
   @override
   _SwipeTextState createState() => _SwipeTextState();
@@ -31,7 +35,7 @@ class _SwipeTextState extends State<SwipeText> with TickerProviderStateMixin {
       }
     });
 
-    _timer = Timer(Duration(milliseconds: 4000), () {
+    _timer = Timer(Duration(milliseconds: widget.showUpDuration), () {
       swipeAnimationController.forward();
     });
 
@@ -47,13 +51,9 @@ class _SwipeTextState extends State<SwipeText> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      bottom: widget.screenSize.height / 10,
-      right: widget.screenSize.width / 10,
-      child: FadeTransition(
-        opacity: swipeAnimation,
-        child: Text('Swipe Left >>>', style: TextStyle(fontSize: 18.0)),
-      ),
+    return FadeTransition(
+      opacity: swipeAnimation,
+      child: Text(widget.text, style: TextStyle(fontSize: 18.0)),
     );
   }
 }

@@ -8,10 +8,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Belajar Puisi',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
       home: PageBuilder(),
+      theme: ThemeData(
+        fontFamily: 'Lato',
+        primarySwatch: Colors.blue,
+        cardTheme: CardTheme(
+          shape: RoundedRectangleBorder(
+            borderRadius: const BorderRadius.all(Radius.circular(12.0)),
+          ),
+        ),
+      ),
     );
   }
 }

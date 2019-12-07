@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:galih_apps/page/curves/radialCircle.dart';
-import 'package:galih_apps/page/pengertianPuisi/const.dart';
+import 'package:galih_apps/page/homepage/swipeText.dart';
 
 class PengertianPuisi extends StatefulWidget {
   @override
@@ -14,10 +14,13 @@ class _PengertianPuisiState extends State<PengertianPuisi> {
     double screenWidth = screenSize.width;
     double screenHeight = screenSize.height;
 
-    double heading1 = screenWidth / 10;
+    double heading = screenWidth / 10;
     double paragraph = screenWidth / 24;
 
     double radiant = screenHeight / 3.5 * 2;
+
+    const pengertianPuisi =
+        'Puisi adalah karya sastra tertulis dimana isinya merupakan ungkapan perasaan seorang penyair dengan menggunakan bahasa yang bermakna semantis serta mengandung irama, rima, dan ritma dalam penyusunan larik dan baitnya.';
 
     return SafeArea(
       child: Container(
@@ -37,24 +40,21 @@ class _PengertianPuisiState extends State<PengertianPuisi> {
               padding: EdgeInsets.symmetric(horizontal: screenWidth / 12, vertical: screenHeight / 8),
               child: Card(
                 elevation: 8.0,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12.0),
-                ),
                 child: Padding(
                   padding: EdgeInsets.fromLTRB(
                     screenWidth / 16,
                     screenHeight / 10,
                     screenWidth / 16,
-                    screenHeight / 16,
+                    screenHeight / 20,
                   ),
                   child: Column(
                     children: <Widget>[
                       Text(
                         'Pengertian Puisi',
-                        style: TextStyle(fontSize: heading1),
+                        style: TextStyle(fontSize: heading),
                       ),
                       // SizedBox(height: 20.0),
-                      Divider(height: 80.0, thickness: 2.0, indent: 16.0, endIndent: 16.0),
+                      Divider(height: 80.0, thickness: 2.0, indent: screenWidth / 16, endIndent: screenWidth / 16),
                       // SizedBox(height: 20.0),
                       RichText(
                         textAlign: TextAlign.justify,
@@ -68,6 +68,15 @@ class _PengertianPuisiState extends State<PengertianPuisi> {
                 ),
               ),
             ),
+            Positioned(
+              bottom: screenSize.height / 14,
+              right: screenSize.width / 9,
+              child: SwipeText(
+                screenSize: screenSize,
+                showUpDuration: 5000,
+                text: '>>>',
+              ),
+            )
           ],
         ),
       ),

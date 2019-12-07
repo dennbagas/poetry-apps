@@ -37,7 +37,7 @@ class _ChildImageState extends State<ChildImage> with TickerProviderStateMixin {
       height: 300.0,
       child: FadeTransition(
         opacity: imageAnimation,
-        child: Image.asset('lib/assets/anak-sd.jpg'),
+        child: Image.asset('lib/assets/img/anak-sd.jpg'),
       ),
     );
   }

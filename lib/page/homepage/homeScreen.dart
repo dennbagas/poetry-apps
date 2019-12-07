@@ -5,8 +5,6 @@ import 'swipeText.dart';
 import 'titleText.dart';
 
 class StartScreen extends StatefulWidget {
-  StartScreen({Key key}) : super(key: key);
-
   @override
   _StartScreenState createState() => _StartScreenState();
 }
@@ -30,7 +28,11 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
             ),
             ChildImage(),
             TitleText(),
-            SwipeText(screenSize: screenSize)
+            Positioned(
+              bottom: screenSize.height / 10,
+              right: screenSize.width / 10,
+              child: SwipeText(screenSize: screenSize, text: 'Swipe Left >>>'),
+            )
           ],
         ),
       ),
