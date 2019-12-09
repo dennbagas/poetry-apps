@@ -10,6 +10,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  nima: ^1.0.5
   cupertino_icons: ^0.1.2
 
 dev_dependencies:
@@ -19,7 +20,14 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - lib/assets/img/anak-sd.jpg
+    - lib/assets/img/anak-smp.jpg
+    - lib/assets/anim/Newton.nima
+    - lib/assets/anim/Newton0.png
+    - lib/assets/anim/Newton1.png
+    - lib/assets/anim/Newton2.png
+    - lib/assets/anim/Newton3.png
+    - lib/assets/anim/Newton4.png
+    - lib/assets/anim/Newton5.png
 
   fonts:
     - family: Lato

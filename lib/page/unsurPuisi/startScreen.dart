@@ -22,7 +22,7 @@ class _UnsurPuisiState extends State<UnsurPuisi> {
 
     return SafeArea(
       child: Container(
-        color: Color(0xeeF5F5F5),
+        color: Colors.white,
         child: Stack(
           children: <Widget>[
             Positioned(
@@ -52,6 +52,7 @@ class _UnsurPuisiState extends State<UnsurPuisi> {
                       crossAxisAlignment: CrossAxisAlignment.stretch,
                       children: <Widget>[
                         Card(
+                          elevation: 8.0,
                           child: Container(
                             padding: EdgeInsets.symmetric(horizontal: screenWidth / 12, vertical: screenWidth / 14),
                             child: Text('Unsur-unsur Puisi',
@@ -118,6 +119,7 @@ class UnsurPuisiCard extends StatelessWidget {
     double paragraph = screenWidth / 24;
 
     return Card(
+      elevation: 8.0,
       child: Container(
         height: screenHeight / 3,
         padding: EdgeInsets.symmetric(horizontal: screenWidth / 12, vertical: screenWidth / 14),

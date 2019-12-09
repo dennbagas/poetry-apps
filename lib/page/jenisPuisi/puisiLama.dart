@@ -19,7 +19,7 @@ class _PuisiLamaState extends State<PuisiLama> {
 
     return SafeArea(
       child: Container(
-        color: Color(0xeeF7F7F7),
+        color: Colors.white,
         child: Stack(
           children: <Widget>[
             Positioned(
@@ -46,6 +46,7 @@ class _PuisiLamaState extends State<PuisiLama> {
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
                     Card(
+                      elevation: 8.0,
                       child: Container(
                         padding: EdgeInsets.symmetric(horizontal: screenWidth / 14, vertical: screenWidth / 18),
                         child: Row(

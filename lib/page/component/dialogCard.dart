@@ -17,6 +17,7 @@ class DialogCard extends StatelessWidget {
     double paragraph = screenWidth / 24;
 
     return Card(
+      elevation: 8.0,
       child: InkWell(
         onTap: () {
           showGeneralDialog(

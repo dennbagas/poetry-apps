@@ -18,7 +18,7 @@ class _ContohPuisiState extends State<ContohPuisi> {
 
     return SafeArea(
       child: Container(
-        color: Color(0xeeF5F5F5),
+        color: Colors.white,
         child: Stack(
           fit: StackFit.expand,
           children: <Widget>[

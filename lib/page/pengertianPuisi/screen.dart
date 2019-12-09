@@ -24,7 +24,7 @@ class _PengertianPuisiState extends State<PengertianPuisi> {
 
     return SafeArea(
       child: Container(
-        color: Color(0xeeF5F5F5),
+        color: Colors.white,
         child: Stack(
           fit: StackFit.expand,
           children: <Widget>[

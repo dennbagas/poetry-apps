@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:galih_apps/page/contohPuisi/contohPuisi.dart';
 import 'package:galih_apps/page/jenisPuisi/jenisPuisiScreen.dart';
+import 'package:galih_apps/page/lastpage/lastpage.dart';
 import 'package:galih_apps/page/unsurPuisi/startScreen.dart';
 import 'homepage/homeScreen.dart';
 import 'pengertianPuisi/screen.dart';
@@ -22,6 +23,7 @@ class _PageBuilderState extends State<PageBuilder> {
           UnsurPuisi(),
           JenisPuisi(),
           ContohPuisi(),
+          LastPage(),
         ],
       ),
     );
