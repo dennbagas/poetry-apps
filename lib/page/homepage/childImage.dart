@@ -31,10 +31,13 @@ class _ChildImageState extends State<ChildImage> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    Size screenSize = MediaQuery.of(context).size;
+    double screenWidth = screenSize.width;
+
     return Positioned(
       bottom: MediaQuery.of(context).size.height / 10,
       left: MediaQuery.of(context).size.width / 50,
-      height: 300.0,
+      height: screenWidth / 1.5,
       child: FadeTransition(
         opacity: imageAnimation,
         child: Image.asset('lib/assets/img/anak-sd.jpg'),

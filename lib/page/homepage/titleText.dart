@@ -48,6 +48,10 @@ class _TitleTextState extends State<TitleText> with TickerProviderStateMixin {
     Curve _curves = Curves.easeOutQuart;
     Duration _duration = Duration(milliseconds: 1500);
 
+    Size screenSize = MediaQuery.of(context).size;
+    double screenWidth = screenSize.width;
+    double heading = screenWidth / 10;
+
     return Positioned(
       top: MediaQuery.of(context).size.height / 6,
       right: MediaQuery.of(context).size.width / 14,
@@ -60,7 +64,7 @@ class _TitleTextState extends State<TitleText> with TickerProviderStateMixin {
           child: Text(
             'AYO BELAJAR\nMEMBUAT PUISI',
             style: TextStyle(
-              fontSize: 48.0,
+              fontSize: heading,
               fontWeight: FontWeight.bold,
               shadows: <Shadow>[
                 Shadow(

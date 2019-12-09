@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:galih_apps/page/curves/radialCircle.dart';
+import 'package:galih_apps/page/component/radialCircle.dart';
 import 'childImage.dart';
 import 'swipeText.dart';
 import 'titleText.dart';
@@ -31,7 +31,7 @@ class _StartScreenState extends State<StartScreen> with TickerProviderStateMixin
             Positioned(
               bottom: screenSize.height / 10,
               right: screenSize.width / 10,
-              child: SwipeText(screenSize: screenSize, text: 'Swipe Left >>>'),
+              child: SwipeText(screenSize: screenSize, text: '>>>'),
             )
           ],
         ),

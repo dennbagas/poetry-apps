@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:galih_apps/page/contohPuisi/constant.dart';
-import 'package:galih_apps/page/curves/radialCircle.dart';
+import 'package:galih_apps/page/component/radialCircle.dart';
 
 class ContohPuisi extends StatefulWidget {
   @override
