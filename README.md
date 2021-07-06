@@ -1,4 +1,4 @@
-# galih_apps
+# Poetry Apps
 
 A new Flutter project.
 
